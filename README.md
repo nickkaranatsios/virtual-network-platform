@@ -110,8 +110,8 @@ build Trema before building Virtual Network Manager.
 
 1. Build Trema
 
-        $ sudo apt-get install gcc make git ruby rubygems ruby-dev libpcap-dev \
-        libsqlite3-dev libglib2.0-dev
+        $ sudo apt-get install gcc make git ruby1.9.3 libpcap-dev libsqlite3-dev \
+        libglib2.0-dev
         $ sudo gem install rubygems-update -v 2.1.11
         $ sudo update_rubygems _2.1.11_
         $ sudo gem install --remote bundler
@@ -188,8 +188,11 @@ build Trema before building Virtual Network Manager.
 
 1. Install Sinatra and ActiveRecord
 
-        $ sudo apt-get install ruby ruby-json ruby-sinatra ruby-activerecord \
-        ruby-mysql
+        $ sudo apt-get install ruby1.9.3
+        $ sudo gem install --remote bundler
+        $ cd configuration_frontend
+        $ bundle install
+        $ cd ..
 
 2. Setup init script
 
@@ -280,8 +283,11 @@ build Trema before building Virtual Network Manager.
 
 1. Install Sinatra
 
-        $ sudo apt-get install ruby ruby-json ruby-sinatra ruby-rest-client \
-        ruby-systemu
+        $ sudo apt-get install ruby1.9.3
+        $ sudo gem install --remote bundler
+        $ cd virtual_network_agent
+        $ bundle install
+        $ cd ..
 
 2. Setup init script
 
