@@ -191,7 +191,7 @@ build Trema before building Virtual Network Manager.
         $ sudo apt-get install ruby1.9.3
         $ sudo gem install --remote bundler
         $ cd configuration_frontend
-        $ bundle install
+        $ bundle install --path vendor/bundle
         $ cd ..
 
 2. Setup init script
@@ -286,7 +286,7 @@ build Trema before building Virtual Network Manager.
         $ sudo apt-get install ruby1.9.3
         $ sudo gem install --remote bundler
         $ cd virtual_network_agent
-        $ bundle install
+        $ bundle install --path vendor/bundle
         $ cd ..
 
 2. Setup init script
